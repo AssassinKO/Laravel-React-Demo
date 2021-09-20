@@ -1,0 +1,26 @@
+import React from 'react';
+import { useDropzone } from 'react-dropzone';
+import { Box, List, ListItem, Typography } from '@material-ui/core';
+
+const DropzoneWithoutKeyboard = () => {
+  const { getRootProps, getInputProps, acceptedFiles } = useDropzone({ noKeyboard: true });
+  const files = acceptedFiles.map(file => <ListItem key={file.path}>{file.path}</ListItem>);
+
+  return (
+    <Box>
+      <Box {...getRootProps({ className: 'dropzone' })}>
+        <input {...getInputProps()} />
+        <Typography>Dropzone without keyboard events</Typography>
+        <em>(SPACE/ENTER and focus events are disabled)</em>
+      </Box>
+      <aside>
+        <Typography component="h4" variant="inherit">
+          Files
+        </Typography>
+        <List>{files}</List>
+      </aside>
+    </Box>
+  );
+};
+
+export default DropzoneWithoutKeyboard;

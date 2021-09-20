@@ -1,0 +1,11 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/js/chunks/vendors~canvg.js": "/js/chunks/vendors~canvg.js",
+    "/js/chunks/vendors~pdfmake.js": "/js/chunks/vendors~pdfmake.js",
+    "/js/chunks/vendors~xlsx.js": "/js/chunks/vendors~xlsx.js",
+    "/js/chunks/xlsx.js": "/js/chunks/xlsx.js",
+    "/favicon.ico": "/favicon.ico",
+    "/logo192.png": "/logo192.png",
+    "/logo512.png": "/logo512.png",
+    "/manifest.json": "/manifest.json"
+}
